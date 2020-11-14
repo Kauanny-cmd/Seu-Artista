@@ -1,0 +1,17 @@
+#home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 54px;
+}
+
+#home-header img {
+    max-width: 180px;
+}
+
+#home-header .auth-container {
+    min-width: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
