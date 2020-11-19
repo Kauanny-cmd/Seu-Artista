@@ -1,0 +1,182 @@
+
+
+/*Limpar formatações padrão*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-size: 1em;
+    font-family: "Poppins";
+    background: #F1F2EB;
+  }
+  
+
+#setinha{
+position: absolute;
+width: 42px;
+height: 43px;
+left: 85px;
+top: 60px;
+opacity: 54%;
+}
+
+#box{
+    position: absolute;
+    width: 1360px;
+    height: 520px;
+    left: 79px;
+    top: 134px;
+    margin: 0 auto;  
+
+    background: #F1F2EB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+#image{
+position: absolute;
+left: 877px;
+top: 107px;
+width: 90px;
+}
+
+a{
+  color: #FF6B6B;
+  text-decoration: none;
+}
+
+#cadastro{
+  /* Cadastro */
+
+position: absolute;
+width: 213px;
+height: 66px;
+left: 303px;
+top: 263px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 44px;
+line-height: 66px;
+/* identical to box height */
+
+color: #000000;
+
+
+}
+
+#com-conta{
+position: absolute;
+width: 242px;
+height: 33px;
+left: 470px;
+top: 357px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 33px;
+color: #FF6B6B;
+}
+
+#cadastrar{
+position: absolute;
+width: 68px;
+height: 33px;
+left: 32px;
+top: 9px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 23px;
+line-height: 33px;
+
+color: #F7FFF7;
+}
+
+#dig-senha{
+/* Digite seu email... */
+position: absolute;
+width: 190px;
+height: 33px;
+left: 22px;
+top: 12px;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 33px;
+
+color: rgba(0, 0, 0, 0.5);
+}
+
+::placeholder{
+/* Digite sua senha... */
+position: absolute;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+text-indent: 5%;
+color: rgba(0, 0, 0, 0.5);
+}
+
+#input-nome{
+    position: absolute;
+    left: 150px;
+    top: 125px;
+    width: 520px;
+    height: 55px;
+    text-indent: 22px;
+    background: #FFFFFF;
+    border: 1px solid #3182D9;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    }
+
+#input-email{
+position: absolute;
+left: 150px;
+top: 200px;
+width: 520px;
+height: 55px;
+text-indent: 22px;
+background: #FFFFFF;
+border: 1px solid #3182D9;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+
+#input-senha{
+  position: absolute;
+  width: 520px;
+  height: 55px;
+  left: 150px;
+  top: 275px;
+  text-indent: 22px;
+  background: #FFFFFF;
+  border: 1px solid #3182D9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  }
+  
+#botao{
+  position: absolute;
+  width: 185px;
+  height: 50px;
+  left: 150px;
+  top: 345px;
+
+  background: #FF6B6B;
+  border: 1px solid #F7FFF7;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
