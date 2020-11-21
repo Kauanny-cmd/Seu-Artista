@@ -1,17 +1,171 @@
+:link {
+  text-decoration: none;
+  color: black;
+}
+
 #home-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 54px;
 }
 
 #home-header img {
-    max-width: 180px;
+  max-width: 180px;
 }
 
 #home-header .auth-container {
-    min-width: 240px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  min-width: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-login {
+  color: #ff6b6b;
+}
+
+.sign-up-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 190px;
+  height: 46px;
+  margin-left: 22px;
+
+  border-radius: 5px;
+  background: #ff6b6b;
+  color: #ffffff;
+}
+.pesquisa {
+  display: flex;
+  width: 100vh;
+  height: 34px;
+  margin: auto;
+  margin-bottom: 72px;
+}
+
+.pesquisa input {
+  width: 604px;
+
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#text {
+  display: flex;
+  text-align: justify;
+  font-size: 12px;
+  margin-left: 12px;
+}
+.card-search {
+  width: 60px;
+  display: flex;
+
+  background: #ff6b6b;
+  border-radius: 0px 4px 4px 0px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.pesquisa input:hover {
+  border: 1px solid #ff6b6b;
+}
+
+.img-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#resposta {
+  display: flex;
+  justify-content: space-around;
+}
+.card-busca {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+  width: 35%;
+  background: #ffffff;
+}
+
+.card-busca .card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-busca img {
+  margin-top: -22px;
+  width: 90px;
+}
+
+.card-busca #title {
+  margin-left: 10px;
+}
+
+.card-busca .card-text {
+  display: flex;
+  margin-left: 12px;
+  margin-bottom: 12px;
+
+  font-size: 12px;
+  font-style: normal;
+}
+
+.card-busca .card-text p {
+  margin-left: 5px;
+}
+
+.card-busca .contact div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.card-busca .contact div a {
+  display: flex;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.card-busca .contact div a:hover {
+  color: #3182d9;
+}
+
+.card-busca .contact .whats a p {
+  margin-right: 2px;
+  color: #62c370;
+}
+
+.card-busca .contact .email a p {
+  margin-right: 2px;
+  color: #ff6b6b;
+}
+
+.card-busca .detalhes {
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+
+  background: #dedfda;
+}
+
+.card-busca .detalhes button {
+  align-items: center;
+  margin-right: 12px;
+  padding: 12px;
+  height: 100%;
+
+  border: none;
+  border-radius: 5px;
+  background: #dedfda;
+  color: black;
+}
+
+.card-busca .detalhes button:hover {
+  color: #3182d9;
 }
