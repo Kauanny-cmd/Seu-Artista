@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FiLogIn } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
@@ -14,7 +14,7 @@ import perfil from "../../assets/Profile.svg";
 import "./styles.css";
 
 function Home() {
-  const [isModalVisible, setIsModalVisible] = useState(false);
+  // const [isModalVisible, setIsModalVisible] = useState(false);
   return (
     <PageContainer>
       <header id="home-header">
@@ -80,9 +80,7 @@ function Home() {
             </div>
           </div>
           <div className="detalhes">
-            <button onClick={() => setIsModalVisible(true)}>
-              Mostrar mais...
-            </button>
+            <button>Mostrar mais...</button>
           </div>
           {/* {isModalVisible ? (
             <Modal onClose={() => setIsModalVisible(false)}>
@@ -118,9 +116,7 @@ function Home() {
             </div>
           </div>
           <div className="detalhes">
-            <button onClick={() => setIsModalVisible(true)}>
-              Mostrar mais...
-            </button>
+            <button>Mostrar mais...</button>
           </div>
           {/* {isModalVisible ? (
             <Modal onClose={() => setIsModalVisible(false)}>

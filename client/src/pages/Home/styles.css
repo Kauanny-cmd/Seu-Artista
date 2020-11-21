@@ -15,7 +15,7 @@
 }
 
 #home-header .auth-container {
-  min-width: 240px;
+  width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,6 +69,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.card-search:hover,
+.sign-up-button:hover {
+  background: rgb(242, 80, 80);
+  border: 1px solid #fefefe;
+}
 .pesquisa input:hover {
   border: 1px solid #ff6b6b;
 }
@@ -154,6 +159,15 @@
   background: #dedfda;
 }
 
+#resposta .card-busca {
+  margin-bottom: 36px;
+  border-radius: 5px;
+}
+
+.card-busca .detalhes {
+  border-radius: 0px 0px 5px 5px;
+}
+
 .card-busca .detalhes button {
   align-items: center;
   margin-right: 12px;
@@ -168,4 +182,50 @@
 
 .card-busca .detalhes button:hover {
   color: #3182d9;
+}
+
+@media (max-width: 900px) {
+  #home-header {
+    padding: 10px;
+  }
+
+  #home-header div,
+  #home-header img {
+    margin-top: 11px;
+  }
+
+  #home-header img {
+    margin-right: 32px;
+    width: 90px;
+  }
+
+  #home-header .auth-container {
+    width: 169px;
+    font-size: 12px;
+  }
+
+  .sign-up-button {
+    height: 37px;
+  }
+
+  .pesquisa {
+    width: 45vh;
+    height: 38px;
+    margin: 34px 29px 84px;
+  }
+
+  .card-search {
+    width: 145px;
+  }
+
+  #resposta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-busca {
+    width: 85%;
+  }
 }
