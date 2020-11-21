@@ -2,17 +2,19 @@ import './styles.css';
 
 function SignUp() {
     return (
+
+        <div>
+            <img src="./seta.svg" id="setinha" href="home"/>
+        
         <div id="box" >
             
-           <div id="image">
-                <img src="music.svg" ></img>
-           </div>
+        <img src="./music.svg" id="image"></img>
             
             <div>
 
-                <p id="cadastro">Cadastro</p>
+            <p id="cadastro">Cadastro</p>
 
-                <form action="" method="POST">
+                <form action="/profile" method="POST">
                     <div id="login-nome">
                         <input name="nome" type="text" placeholder="Digite seu nome..." id="input-nome">
                         </input>
@@ -39,7 +41,7 @@ function SignUp() {
                 </form> 
             </div>
         </div>
-       
+        </div>
     );
 }
 

@@ -4,17 +4,17 @@ function Login() {
     return (
     <div >
            
-               <img src="seta.svg" id="setinha"/>
+               <img src="./seta.svg" id="setinha" href="home"/>
            
       
         <div id="box" >
         
-            <img src="melo" id="image"></img>
+            <img src="./melo.svg" id="image"></img>
 
         <p id="login">LOGIN</p>
 
             <div>
-                <form action="" method="POST">
+                <form action="/prolife" method="POST">
                     <div>
                         <input name="email" type="email" placeholder="Digite seu email..." id="input-email">
                         </input>
