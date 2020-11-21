@@ -130,3 +130,40 @@ textarea:hover {
   background: rgb(242, 80, 80);
   border: 1px solid #fefefe;
 }
+
+@media (min-width: 900px) {
+  .home-perfil {
+    font-size: 52px;
+  }
+
+  #perfil-header img {
+    width: 100px;
+  }
+
+  #perfil {
+    display: flex;
+    width: 99%;
+  }
+
+  #perfil #form-conta {
+    width: 80%;
+  }
+
+  .contact-perfil {
+    display: flex;
+    width: 90%;
+    margin-left: 12px;
+  }
+
+  #button-perfil {
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    margin-top: 0;
+  }
+  #button-perfil input {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+  }
+}
