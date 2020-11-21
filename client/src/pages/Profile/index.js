@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import PageContainer from "../../components/PageContainer";
 
@@ -8,9 +8,12 @@ import { BiLeftArrowAlt } from "react-icons/bi";
 import sair from "../../assets/sair.svg";
 import perfil from "../../assets/Profile.svg";
 
+import Modal from "../../components/Modal";
+
 import "./styles.css";
 
 function Profile() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
   return (
     <PageContainer>
       <header id="perfil-header">
@@ -20,36 +23,52 @@ function Profile() {
           </Link>
         </div>
 
-        <img src={perfil} alt="Seu Artísta" />
+        <img
+          src={perfil}
+          alt="Seu Artísta"
+          sName="detalhes"
+          onClick={() => setIsModalVisible(true)}
+        />
       </header>
-      <div id="edita-conta">
-        <form id="form-perfil">
-          <div className="confi-conta">
-            <label>
-              <GrUserSettings />
-            </label>
-            <input
-              type="Button"
-              value="Atualizar minha conta"
-              name="arualizar"
-            />
-          </div>
+      {isModalVisible ? (
+        <Modal onClose={() => setIsModalVisible(false)}>
+          <div className="card-modal">
+            <div id="edita-conta">
+              <form id="form-perfil">
+                <div className="confi-conta">
+                  <label>
+                    <GrUserSettings />
+                  </label>
+                  <input
+                    type="Button"
+                    value="Atualizar minha conta"
+                    name="arualizar"
+                  />
+                </div>
 
-          <div className="confi-conta">
-            <label>
-              <GoTrashcan />
-            </label>
-            <input type="Button" value="Deletar minha conta" name="deletar" />
-          </div>
+                <div className="confi-conta">
+                  <label>
+                    <GoTrashcan />
+                  </label>
+                  <input
+                    type="Button"
+                    value="Deletar minha conta"
+                    name="deletar"
+                  />
+                </div>
 
-          <div className="confi-conta">
-            <label>
-              <img src={sair} alt="sair" />
-            </label>
-            <input type="Button" value="Sair" name="sair" />
+                <div className="confi-conta">
+                  <label>
+                    <img src={sair} alt="sair" />
+                  </label>
+                  <input type="Button" value="Sair" name="sair" />
+                </div>
+              </form>
+            </div>
           </div>
-        </form>
-      </div>
+        </Modal>
+      ) : null}
+
       <h1 id="title-perfil">Minha Conta</h1>
 
       <div id="linha-perfil"></div>
