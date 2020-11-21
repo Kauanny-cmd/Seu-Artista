@@ -1,0 +1,169 @@
+#perfil-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#perfil-header div,
+#perfil-header img {
+  margin-top: 21px;
+}
+
+.home-perfil {
+  margin-left: 27px;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 32px;
+}
+
+#perfil-header img {
+  margin-right: 32px;
+  width: 50px;
+}
+
+#edita-conta {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  margin-right: 12px;
+}
+
+#edita-conta form {
+  display: flex;
+  flex-direction: column;
+  margin: 1px 2px 1px;
+  text-align: start;
+  padding: 3px;
+
+  background: #f7fff7;
+  border-radius: 5px;
+}
+
+#edita-conta form input,
+#edita-conta form label {
+  margin-left: 12px;
+
+  background: #f7fff7;
+}
+
+#edita-conta form .confi-conta {
+  display: flex;
+
+  background: #f7fff7;
+}
+
+#edita-conta form input {
+  margin-bottom: 12px;
+  text-align: center;
+  background: #f7fff7;
+  border: none;
+}
+
+#title-perfil {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 85%;
+  margin-left: 12px;
+}
+
+#linha-perfil {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 1px;
+  margin: 12px;
+
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #3f3d56;
+}
+
+#perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 95%;
+}
+
+#perfil #form-conta {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-conta input,
+.contact-perfil select,
+textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 12px 8px;
+  width: 90%;
+  text-align: start;
+  padding: 8px;
+  background: #f7fff7;
+  border: 1px solid #3f3d56;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #00000080;
+}
+
+#form-conta input:hover,
+.contact-perfil select:hover,
+textarea:hover {
+  border: 1px solid #3182d9;
+}
+.contact-perfil .option {
+  margin-bottom: 18px;
+}
+
+#button-perfil .button-salvar {
+  background: rgba(255, 107, 107, 1);
+  border: none;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-perfil .button-salvar:hover {
+  background: rgb(242, 80, 80);
+  border: 1px solid #fefefe;
+}
+
+@media (min-width: 900px) {
+  .home-perfil {
+    font-size: 52px;
+  }
+
+  #perfil-header img {
+    width: 100px;
+  }
+
+  #perfil {
+    display: flex;
+    width: 99%;
+  }
+
+  #perfil #form-conta {
+    width: 80%;
+  }
+
+  .contact-perfil {
+    display: flex;
+    width: 90%;
+    margin-left: 12px;
+  }
+
+  #button-perfil {
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    margin-top: 0;
+  }
+  #button-perfil input {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+  }
+}
