@@ -36,7 +36,6 @@ function Home() {
         <input
           type="search"
           id="text"
-          list="sugestao"
           placeholder=" Procure por um artista ou banda..."
           className="search-input"
         />
@@ -46,11 +45,6 @@ function Home() {
             <img src={search} alt="search" />
           </div>
         </div>
-
-        <datalist id="sugestao">
-          <option value="text"></option>
-          <option value={"test-var"}></option>
-        </datalist>
 
         <div className="check-container">
           <input type="checkbox" name="check" />
