@@ -1,38 +1,36 @@
-import './styles.css';
+import { Link } from 'react-router-dom';
+import { FiArrowLeft } from 'react-icons/fi';
+
+import melo from '../../assets/melo.svg';
+
+import '../../styles/auth.css';
 
 function Login() {
     return (
-    <div >
-           
-               <img src="./seta.svg" id="setinha" href="home"/>
-           
-      
-        <div id="box" >
-        
-            <img src="./melo.svg" id="image"></img>
+    <div className="page-container">
+        <header className="page-header">
+            <Link to="/" className="setinha">
+                <FiArrowLeft />
+            </Link>
+        </header>
 
-        <p id="login">LOGIN</p>
+        <div className="box">
+            <img src={melo} className="page-image" alt="melo" />
 
-            <div>
-                <form action="/prolife" method="POST">
-                    <div>
-                        <input name="email" type="email" placeholder="Digite seu email..." id="input-email">
-                        </input>
-                    <div>
-                        <input name="senha" type="password" placeholder="Digite sua senha..." id="input-senha">
-                    </input>
+            <div className="form-area">
+                <h1 className="page-title">Login</h1>
+
+                <form className="form">
+                    <input className="page-input" name="email" type="email" placeholder="Digite seu email..." id="input-email" />
+                
+                    <input className="page-input" name="senha" type="password" placeholder="Digite sua senha..." id="input-senha" />
                     
-                    <div id="botao" >
-                        <button type="submit">
-                            <a href="/" id="entrar">
-                                Entrar
-                            </a>
-                        </button>
-                    </div>
-                    <p id="sem-conta">
-                        <a href="/signup">Não tenho conta</a>
-                    </p>
-                    </div>
+                    <div className="actions-container">
+                        <button className="action-button" type="submit">Entrar</button>
+
+                        <Link className="link-text" to="/signup">
+                            Não tenho conta
+                        </Link>
                     </div>
                 </form> 
             </div>

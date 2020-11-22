@@ -30,7 +30,7 @@ function Profile() {
             </label>
             <input
               type="Button"
-              value="Atualizar minha conta"
+              defaultValue="Atualizar minha conta"
               name="arualizar"
             />
           </div>
@@ -39,14 +39,14 @@ function Profile() {
             <label>
               <GoTrashcan />
             </label>
-            <input type="Button" value="Deletar minha conta" name="deletar" />
+            <input type="Button" defaultValue="Deletar minha conta" name="deletar" />
           </div>
 
           <div className="confi-conta">
             <label>
               <img src={sair} alt="sair" />
             </label>
-            <input type="Button" value="Sair" name="sair" />
+            <input type="Button" defaultValue="Sair" name="sair" />
           </div>
         </form>
       </div>
@@ -56,42 +56,47 @@ function Profile() {
 
       <div id="perfil">
         <form id="form-conta">
-          <input type="text" value="Nome" id="nome" />
+          <input type="text" defaultValue="Nome" id="nome" />
           <div className="contact-perfil">
-            <input type="email" value="Email" id="email" />
-            <input type="text" value="Whatsapp" id="whatsapp" />
+            <input type="email" defaultValue="Email" id="email" />
+            <input type="text" defaultValue="Whatsapp" id="whatsapp" />
           </div>
 
           <div className="contact-perfil">
             <select name="select-genero" className="option">
-              <option value="Gênero">Gênero</option>
-              <option value="Feminino" selected>
-                Feminino
+              <option defaultValue="Gênero">Gênero</option>
+              <option defaultValue="Feminino">
+                Rock
               </option>
-              <option value="Masculino">Masculino</option>
+              <option defaultValue="Masculino">Forró</option>
             </select>
 
             <select name="select-rede" className="option">
-              <option value="Rede Social">Rede Social</option>
-              <option value="Instagram" selected>
+              <option defaultValue="Rede Social">Rede Social</option>
+              <option defaultValue="Instagram">
                 Instagram
               </option>
-              <option value="Youtube">Youtube</option>
-              <option value="Website">Website</option>
+              <option defaultValue="Youtube">Youtube</option>
+              <option defaultValue="Website">Website</option>
             </select>
           </div>
-          <textarea name="textarea" rows="5" cols="30">
+          <textarea 
+            name="textarea"
+            rows="5" cols="30"
+            defaultValue="
             Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Donec tincidunt venenatis diam, quis facilisis odio dictum at.
             Vestibulum sit amet lacus eget leo fringilla laoreet. Curabitur
             tempor felis nec sem consequat, ac tempor quam pellentesque. Ut
             sagittis magna sed tortor tincidunt faucibus. Sed et ipsum sit amet
-            justo fermentum scelerisque."
-          </textarea>
+            justo fermentum scelerisque.
+            "
+          />
+            
           <div id="button-perfil">
             <input
               type="Button"
-              value="Salvar"
+              defaultValue="Salvar"
               name="button"
               className="button-salvar"
             />

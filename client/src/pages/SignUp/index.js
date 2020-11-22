@@ -1,46 +1,42 @@
-import './styles.css';
+import { Link } from 'react-router-dom';
+import { FiArrowLeft } from 'react-icons/fi';
+
+import music from '../../assets/music.svg';
+
+import '../../styles/auth.css';
 
 function SignUp() {
     return (
+        <div className="page-container">
+            <header className="page-header">
+                <Link to="/" className="setinha">
+                    <FiArrowLeft />
+                </Link>
+            </header>
 
-        <div>
-            <img src="./seta.svg" id="setinha" href="home"/>
-        
-        <div id="box" >
-            
-        <img src="./music.svg" id="image"></img>
-            
-            <div>
+            <div className="box" id="sign-up-box">
+                <div className="form-area">
+                    <h1 className="page-title">Cadastro</h1>
 
-            <p id="cadastro">Cadastro</p>
+                    <form className="form">
+                        <input className="page-input" name="nome" type="text" placeholder="Digite seu nome..." />
 
-                <form action="/profile" method="POST">
-                    <div id="login-nome">
-                        <input name="nome" type="text" placeholder="Digite seu nome..." id="input-nome">
-                        </input>
-                    <div  id="login-email">
-                        <input name="email" type="email" placeholder="Digite seu email..." id="input-email">
-                        </input>
-                    <div id="login-senha">
-                        <input name="senha" type="password" placeholder="Digite sua senha..." id="input-senha">
-                        </input>
-                        <div id="botao">
-                        <button type="submit">
-                            <a href="/" id="cadastrar">
-                                Cadastrar
-                            </a>
-                        </button>
+                        <input className="page-input" name="email" type="email" placeholder="Digite seu email..." />
+                
+                        <input className="page-input" name="senha" type="password" placeholder="Digite sua senha..." />
+
+                        <div className="actions-container">
+                            <button className="action-button" type="submit">Cadastrar</button>
+
+                            <Link className="link-text" to="/login">
+                                Já tenho uma conta
+                            </Link>
                         </div>
-                        
-                    <p id="com-conta">
-                        <a href="login">Já tenho uma conta</a>
-                    </p>
-                    </div>
-                    </div>
-                    </div>
-                </form> 
+                    </form> 
+                </div>
+
+                <img src={music} className="page-image" id="sign-up-page-image" alt="music"/>
             </div>
-        </div>
         </div>
     );
 }

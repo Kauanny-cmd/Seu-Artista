@@ -2,15 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px;
 }
 
 #perfil-header div,
 #perfil-header img {
-  margin-top: 21px;
+  margin-top: 24px;
 }
 
 .home-perfil {
-  margin-left: 27px;
+  margin-left: 24px;
   color: rgba(0, 0, 0, 0.54);
   font-size: 32px;
 }
@@ -23,7 +24,7 @@
 #edita-conta {
   display: flex;
   justify-content: flex-end;
-  width: 90%;
+  width: 100%;
   margin-right: 12px;
 }
 
@@ -133,37 +134,52 @@ textarea:hover {
 
 @media (min-width: 900px) {
   .home-perfil {
-    font-size: 52px;
+    font-size: 32px;
   }
 
   #perfil-header img {
-    width: 100px;
+    width: 56px;
   }
 
   #perfil {
     display: flex;
-    width: 99%;
+    width: 100%;
   }
 
   #perfil #form-conta {
-    width: 80%;
+    width: 100%;
   }
 
   .contact-perfil {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin-left: 12px;
   }
 
   #button-perfil {
     display: flex;
-    justify-content: center;
-    width: 99%;
+    justify-content: flex-start;
+    width: 100%;
     margin-top: 0;
   }
   #button-perfil input {
     display: flex;
     justify-content: center;
     width: 30%;
+    cursor: pointer;
+  }
+
+  #perfil .contact-perfil {
+    margin: 0;
+  }
+
+  #perfil .contact-perfil select, #perfil .contact-perfil input {
+    width: 44.1%;
+  }
+
+  #edita-conta form {
+    margin-bottom: 16px;
+    margin-top: -24px;
+    margin-right: 54px;
   }
 }
