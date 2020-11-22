@@ -1,0 +1,54 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 90%;
+  margin-top: -39px;
+}
+
+.container-modal {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 100%;
+}
+
+.card-modal .close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: none;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content .card-modal {
+  display: flex;
+  margin: 12px;
+}
+
+#button-modal {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: -33px;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 25px;
+  border: none;
+}
+
+@media (min-width: 900px) {
+  #button-modal .close {
+    margin-right: 57px;
+    margin-top: -10px;
+  }
+}
