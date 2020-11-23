@@ -2,61 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
-}
-
-#perfil-header div,
-#perfil-header img {
-  margin-top: 24px;
+  padding: 26px;
 }
 
 .home-perfil {
   margin-left: 24px;
   color: rgba(0, 0, 0, 0.54);
   font-size: 32px;
-}
-
-#perfil-header img {
-  margin-right: 32px;
-  width: 50px;
-}
-
-#edita-conta {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-right: 12px;
-}
-
-#edita-conta form {
-  display: flex;
-  flex-direction: column;
-  margin: 1px 2px 1px;
-  text-align: start;
-  padding: 3px;
-
-  background: #f7fff7;
-  border-radius: 5px;
-}
-
-#edita-conta form input,
-#edita-conta form label {
-  margin-left: 12px;
-
-  background: #f7fff7;
-}
-
-#edita-conta form .confi-conta {
-  display: flex;
-
-  background: #f7fff7;
-}
-
-#edita-conta form input {
-  margin-bottom: 12px;
-  text-align: center;
-  background: #f7fff7;
-  border: none;
 }
 
 #title-perfil {
@@ -137,13 +89,13 @@ textarea:hover {
     font-size: 32px;
   }
 
-  #perfil-header img {
-    width: 56px;
-  }
-
   #perfil {
     display: flex;
     width: 100%;
+  }
+
+  #perfil-header {
+    padding: 44px;
   }
 
   #perfil #form-conta {
@@ -173,13 +125,8 @@ textarea:hover {
     margin: 0;
   }
 
-  #perfil .contact-perfil select, #perfil .contact-perfil input {
+  #perfil .contact-perfil select,
+  #perfil .contact-perfil input {
     width: 44.1%;
-  }
-
-  #edita-conta form {
-    margin-bottom: 16px;
-    margin-top: -24px;
-    margin-right: 54px;
   }
 }
