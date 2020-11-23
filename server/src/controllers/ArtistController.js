@@ -26,6 +26,16 @@ class ArtistController {
         return response.json(artists);
     }
 
+    async findOne (request, response) {
+        const { id } = request.params;
+
+        const artist = await Artist.findOne({
+            userId: id
+        });
+
+        return response.json(artist);
+    }
+
     async update (request, response) {
         const { id } = request.params;
         const newValues = request.body;

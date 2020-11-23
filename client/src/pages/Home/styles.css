@@ -96,17 +96,18 @@
   font-size: 14px;
 }
 
-
-
 #resposta {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
+
 .card-busca {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-bottom: 22px;
-  width: 35%;
+  min-width: 360px;
+  margin: 36px 0 16px 56px;
   background: #ffffff;
 }
 
@@ -117,12 +118,15 @@
 }
 
 .card-busca img {
-  margin-top: -22px;
+  margin-top: -48px;
   width: 90px;
+  height: 90px;
+  border-radius: 45px;
 }
 
 .card-busca #title {
   margin-left: 10px;
+  font-size: 16px;
 }
 
 .card-busca .card-text {
@@ -154,21 +158,25 @@
   color: #3182d9;
 }
 
-.card-busca .contact .whats a p {
+.card-busca .contact .whats p {
   margin-right: 2px;
   color: #62c370;
 }
 
-.card-busca .contact .email a p {
+.card-busca .contact .email p {
   margin-right: 2px;
   color: #ff6b6b;
+}
+
+.card-busca .contact .whats p span, .card-busca .contact .email p span {
+  margin-left: 6px;
 }
 
 .card-busca .detalhes {
   display: flex;
   justify-content: flex-end;
   height: 40px;
-
+  margin-top: 24px;
   background: #dedfda;
 }
 
@@ -191,6 +199,7 @@
   border-radius: 5px;
   background: #dedfda;
   color: black;
+  cursor: pointer;
 }
 
 .card-busca .detalhes button:hover {
