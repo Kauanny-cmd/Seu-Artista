@@ -7,6 +7,7 @@ const routes = express.Router();
 
 routes.post('/artist', ArtistController.create);
 routes.get('/artists', ArtistController.index);
+routes.get('/artist/:id', ArtistController.findOne);
 routes.put('/artist/:id', ArtistController.update);
 routes.delete('/artist/:id', ArtistController.delete);
 

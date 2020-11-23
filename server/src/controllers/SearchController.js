@@ -11,7 +11,7 @@ class SearchController {
             genresArray = parseStringAsArray(genres);
         }
 
-        const artists = await Artist.find({
+        let artists = await Artist.find({
             $or: [
                 {name},
                 {
@@ -19,6 +19,10 @@ class SearchController {
                 }
             ]
         });
+
+        if(artists.length === 0) {
+            artists = await Artist.find();
+        }
 
         return response.json(artists);
     }

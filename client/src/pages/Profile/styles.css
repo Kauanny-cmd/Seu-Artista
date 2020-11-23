@@ -10,6 +10,10 @@
   margin-top: 24px;
 }
 
+.profile {
+  width: 296px;
+}
+
 .home-perfil {
   margin-left: 24px;
   color: rgba(0, 0, 0, 0.54);
@@ -132,6 +136,34 @@ textarea:hover {
   border: 1px solid #fefefe;
 }
 
+.selects-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 16px 12px;
+}
+
+.selects-container .multi-select {
+  width: 100%;
+  display: none;
+}
+
+.profile-pic {
+  align-self: flex-start;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-pic img {
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.profile-pic input {
+  margin-bottom: 16px;
+}
+
 @media (min-width: 900px) {
   .home-perfil {
     font-size: 32px;
@@ -175,6 +207,13 @@ textarea:hover {
 
   #perfil .contact-perfil select, #perfil .contact-perfil input {
     width: 44.1%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  #perfil textarea {
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   #edita-conta form {
