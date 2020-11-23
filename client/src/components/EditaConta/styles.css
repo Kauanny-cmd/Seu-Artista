@@ -1,0 +1,57 @@
+#edita-conta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 46%;
+}
+
+#foto-perfil {
+  display: flex;
+  justify-content: flex-end;
+}
+#edita-conta #foto-perfil img {
+  width: 50px;
+}
+
+#edita-conta form {
+  display: flex;
+  flex-direction: column;
+  margin: 1px 2px 1px;
+  text-align: start;
+  width: 100%;
+  background: #f7fff7;
+  border-radius: 5px;
+}
+
+#edita-conta form input,
+#edita-conta form label {
+  margin-left: 12px;
+
+  background: #f7fff7;
+}
+
+#edita-conta form .confi-conta {
+  display: flex;
+  font-size: 14px;
+  background: #f7fff7;
+}
+
+#edita-conta form input {
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 10px;
+
+  background: #f7fff7;
+  border: none;
+}
+
+@media (min-width: 900px) {
+  #edita-conta {
+    width: 16%;
+  }
+
+  #edita-conta form {
+    margin-bottom: 16px;
+    margin-right: 44px;
+  }
+}

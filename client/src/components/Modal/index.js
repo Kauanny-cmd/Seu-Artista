@@ -14,9 +14,11 @@ const Modal = ({ id = "modal", onClose = () => {}, children }) => {
       <div className="container-modal">
         <div className="content">{children}</div>
       </div>
-      <button className="close" onClick={onClose}>
-        <GrFormClose />
-      </button>
+      <div id="button-modal">
+        <button className="close" onClick={onClose}>
+          <GrFormClose />
+        </button>
+      </div>
     </div>
   );
 };
