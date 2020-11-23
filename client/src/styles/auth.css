@@ -1,121 +1,177 @@
 .page-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #F1F2EB;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #f1f2eb;
 }
 
 .page-header {
-    margin: 0 auto;
-    width: 80%;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .setinha {
-    width: 42px;
-    height: 42px;
-    color: #FF6B6B;
-    text-decoration: none;
+  width: 42px;
+  height: 42px;
+  color: #ff6b6b;
+  text-decoration: none;
 }
 
 .setinha svg {
-    width: 26px;
-    height: 26px;
+  width: 26px;
+  height: 26px;
 }
 
 .box {
-    width: 80%;
-    height: 480px;
-    margin: 0 auto;
-    padding: 48px;    
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-radius: 8px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 80%;
+  height: 480px;
+  margin: 0 auto;
+  padding: 48px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #sign-up-box {
-    height: 540px;
+  height: 540px;
 }
 
 .page-image {
-    width: 280px;
-    height: 280px;
-    align-self: center;
-    margin-top: 32px;
+  width: 280px;
+  height: 280px;
+  align-self: center;
+  margin-top: 32px;
 }
 
 #sign-up-page-image {
-    width: 360px;
-    height: 360px;
+  width: 360px;
+  height: 360px;
+}
+
+.page-image-responsiva {
+  display: none;
 }
 
 .page-title {
-    text-align: center;
-    font-family: Poppins;
-    font-weight: bold;
-    font-size: 45px;
-    line-height: 67px;
-} 
+  text-align: center;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 67px;
+}
 
 .form {
-    margin-top: 12px;
-    margin-left: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  margin-top: 12px;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .page-input {
-    margin-top: 24px;
-    width: 520px;
-    height: 55px;
-    text-indent: 22px;
-    background: #FFFFFF;
-    border: 1px solid #3182D9;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+  margin-top: 24px;
+  width: 520px;
+  height: 55px;
+  text-indent: 22px;
+  background: #ffffff;
+  border: 1px solid #3182d9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
 .actions-container {
-    margin-top: 48px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  margin-top: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 /* Login */
 .action-button {
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 33px;
-    color: #F7FFF7;
-    width: 185px;
-    height: 50px;
-    background: #FF6B6B;
-    border: 1px solid #F7FFF7;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    animation: normal;
-    cursor: pointer;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #f7fff7;
+  width: 185px;
+  height: 50px;
+  background: #ff6b6b;
+  border: 1px solid #f7fff7;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  animation: normal;
+  cursor: pointer;
 }
 
 .link-text {
-    font-family: Poppins;
-    font-size: 18px;
-    line-height: 33px;
-    color: #FF6B6B;
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 33px;
+  color: #ff6b6b;
 }
 
 ::placeholder {
-    font-family: Poppins;
-    font-size: 18px;
-    text-indent: 5%;
-    color: rgba(0, 0, 0, 0.5);
+  font-family: Poppins;
+  font-size: 18px;
+  text-indent: 5%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+  .box {
+    padding: 0;
+  }
+
+  .form-area {
+    width: 100%;
+  }
+
+  .form {
+    margin-top: 0;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .page-image {
+    display: none;
+  }
+
+  .page-title {
+    font-size: 34px;
+  }
+
+  .page-image-responsiva {
+    display: block;
+    width: 100%;
+    height: 121px;
+  }
+
+  .page-input {
+    width: 84%;
+    height: 43px;
+  }
+
+  .actions-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+  }
+
+  .action-button {
+    width: 50%;
+  }
+
+  .link-text {
+    margin-top: 12px;
+    font-size: 14px;
+  }
 }
