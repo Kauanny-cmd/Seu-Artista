@@ -8,6 +8,7 @@ export default function AuthProvider({ children }) {
 
     const [isUserAuthenticated, setIsUserAuthenticated] = useState(authStorage ? authStorage.isUserAuthenticated : false);
     const [userId, setUserId] = useState(null);
+    const [current, setCurrent] = useState(null);
 
     async function signIn(email, password) {
         await firebase.auth().signInWithEmailAndPassword(email, password)
@@ -37,6 +38,16 @@ export default function AuthProvider({ children }) {
         })
     }
 
+    async function signOut() {
+        await firebase.auth().signOut()
+        .then(() => {
+            setUserId(null);
+            setIsUserAuthenticated(false);
+
+            localStorage.clear();
+        })
+    }
+
     return (
         <AuthContext.Provider
             value={{
@@ -44,7 +55,10 @@ export default function AuthProvider({ children }) {
                 userId,
                 signIn,
                 signUp,
-                setUserId
+                setUserId,
+                signOut,
+                current,
+                setCurrent
             }}
         
         >

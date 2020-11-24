@@ -40,7 +40,7 @@ class ArtistController {
         const { id } = request.params;
         const newValues = request.body;
 
-        await Artist.findByIdAndUpdate({ _id: id }, newValues);
+        await Artist.findByIdAndUpdate({ userId: id }, newValues);
         
         const artist = await Artist.findById({ _id: id });
 
@@ -50,7 +50,7 @@ class ArtistController {
     async delete (request, response) {
         const { id } = request.params;
 
-        await Artist.findByIdAndDelete({ _id: id });
+        await Artist.deleteOne({ userId: id });
 
         return response.status(200).send("Artist deleted successfully!");
     }

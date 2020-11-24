@@ -44,6 +44,7 @@
   align-items: center;
   font-size: 25px;
   border: none;
+  cursor: pointer;
 }
 
 @media (min-width: 900px) {

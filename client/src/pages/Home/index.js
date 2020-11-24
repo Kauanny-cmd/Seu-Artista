@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
 import PageContainer from "../../components/PageContainer";
-//import Modal from "../../components/Modal.js";
+import EditaConta from '../../components/EditaConta';
 
 import api from '../../services/api';
 
@@ -15,12 +15,18 @@ import search from "../../assets/search.svg";
 import "./styles.css";
 
 function Home() {
-  // const [isModalVisible, setIsModalVisible] = useState(false);
-
   const [artists, setArtists] = useState([]);
   const [name, setName] = useState('');
   const [genres, setGenres] = useState('');
   const [isChecked, setIsChecked] = useState(false);
+  
+  const userData = JSON.parse(localStorage.getItem('userData'));
+  
+  let isUserAuthenticated = false;
+
+  if (userData) {
+    isUserAuthenticated = userData.isUserAuthenticated;
+  }
 
   useEffect(() => {
     async function getArtists() {
@@ -58,16 +64,20 @@ function Home() {
       <header id="home-header">
         <img src={logo} alt="Seu Artísta" />
 
-        <div className="auth-container">
-          <Link to="/login" className="home-login">
-            Entrar
-          </Link>
+        {isUserAuthenticated ? (
+          <EditaConta />
+        ) : (
+          <div className="auth-container">
+            <Link to="/login" className="home-login">
+              Entrar
+            </Link>
 
-          <Link className="sign-up-button" to="/signup">
-            <FiLogIn />
-            Fazer Cadastro
-          </Link>
-        </div>
+            <Link className="sign-up-button" to="/signup">
+              <FiLogIn />
+              Fazer Cadastro
+            </Link>
+          </div>
+        )} 
       </header>
 
       <form className="pesquisa" onSubmit={handleSearch}>
@@ -113,18 +123,18 @@ function Home() {
           
             <div className="contact">
               <div className="whats">
-                  <p>
+                  <a href={`https://api.whatsapp.com/send/?phone=55${artist.whatsapp}&app_absent=0`}>
                     <FaWhatsapp />
 
                     <span>{artist.whatsapp}</span>
-                  </p>
+                  </a>
               </div>
               
               <div className="email">
-                <p>
+                <a href={`mailto://${artist.email}`}>
                   <AiOutlineMail />
                   <span>{artist.email}</span>
-                </p>
+                </a>
               </div>
             </div>
             

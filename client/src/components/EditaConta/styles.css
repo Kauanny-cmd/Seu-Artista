@@ -10,7 +10,10 @@
   justify-content: flex-end;
 }
 #edita-conta #foto-perfil img {
-  width: 50px;
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  cursor: pointer;
 }
 
 #edita-conta form {
@@ -34,6 +37,7 @@
   display: flex;
   font-size: 14px;
   background: #f7fff7;
+ 
 }
 
 #edita-conta form input {
@@ -43,6 +47,11 @@
 
   background: #f7fff7;
   border: none;
+  cursor: pointer;
+}
+
+#edita-conta form input:hover {
+  color: cornflowerblue;
 }
 
 @media (min-width: 900px) {
@@ -52,6 +61,9 @@
 
   #edita-conta form {
     margin-bottom: 16px;
-    margin-right: 44px;
+    margin-right: 36px;
+    width: 240px;
+    height: 80px;
+    padding-top: 16px;
   }
 }

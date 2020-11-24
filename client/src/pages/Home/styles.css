@@ -158,12 +158,12 @@
   color: #3182d9;
 }
 
-.card-busca .contact .whats p {
+.card-busca .contact .whats a {
   margin-right: 2px;
   color: #62c370;
 }
 
-.card-busca .contact .email p {
+.card-busca .contact .email a {
   margin-right: 2px;
   color: #ff6b6b;
 }
